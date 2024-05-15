@@ -1,5 +1,4 @@
-import Accordion from './components/Accordion/Accordion.jsx';
-import AccordionItem from './components/Accordion/AccordionItem.jsx';
+
 
 
 function App() {
