@@ -9,9 +9,8 @@ export default function SearchableList({ items, itemKeyFn, children }) {
   );
 
   function handleChange(event) {
-    if (lastChange.current) {
-      clearTimeout(lastChange.current)
-    }
+    setSearchTerm(event.target.value);
+  }
 
   return (
     <div className="searchable-list">

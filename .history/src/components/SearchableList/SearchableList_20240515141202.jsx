@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 export default function SearchableList({ items, itemKeyFn, children }) {
     const lastChange = useRef();
@@ -9,9 +9,8 @@ export default function SearchableList({ items, itemKeyFn, children }) {
   );
 
   function handleChange(event) {
-    if (lastChange.current) {
-      clearTimeout(lastChange.current)
-    }
+    setSearchTerm(event.target.value);
+  }
 
   return (
     <div className="searchable-list">
