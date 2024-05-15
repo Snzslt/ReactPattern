@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function SearchableList({ items, itemKeyFn, children }) {
+export default function SearchableList({ items }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const searchResults = items.filter((item) =>
