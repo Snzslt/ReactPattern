@@ -21,11 +21,11 @@ export default function Accordion({ children, className }) {
     const [openItemId, setOpenItemId] = useState();
 
     function toggleItem(id){
-      setOpenItemId((prevId) => (prevId === id ? null : id));
+      setOpenItemId((prev) => (prevId === id ? null : id));
     }
 
     const contextValue = {
-      openItemId, 
+      openItemId,
       toggleItem,
     };
 

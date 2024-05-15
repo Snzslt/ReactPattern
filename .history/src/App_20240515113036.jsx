@@ -23,7 +23,7 @@ function App() {
         </article>
       </Accordion.Item>
       <Accordion.Item
-         id="local-guides"
+      id="local-guides"
         className="accordion-item"
         title="We're working with local guides"
       >
